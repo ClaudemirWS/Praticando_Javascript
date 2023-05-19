@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operadores</title>
+    <style>
+        body {
+            background-color: bisque;
+            color: slateblue;
+        }
+
+        h1 {
+            color: slategrey;
+        }
+    </style>
 </head>
 <body>
     <script>
-        
+        var n1 = window.prompt("Digite um número: ");
+        var n2 = window.prompt("Digite outro número: ");
+        n1 = Number.parseInt(n1);
+        n2 = Number.parseInt(n2);
+        document.write(`A soma de ${n1} + ${n2} = ` + (n1+n2))
+        document.write(`<br>A subtração de ${n1} - ${n2} = ` + (n1-n2))
+        document.write(`<br>A multiplicação de ${n1} x ${n2} = ` + (n1*n2))
+        document.write(`<br>A divisão de ${n1} / ${n2} = ` + (n1/n2))
     </script>
 </body>
 </html>
