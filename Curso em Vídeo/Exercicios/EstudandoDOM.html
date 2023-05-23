@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando DOM</title>
+    <style>
+        body {
+            background-color: bisque;
+            color: slateblue;
+        }
+
+        h1 {
+            color: slategrey;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Aprendendo a usar DOM</h2>
+    <p>Estou estudando no Curso em Vídeo</p>
+    <p>Primeira aula de DOM</p>
+    <div id="clique">Clique em mim</div>
+    <script>
+        //UTILIZANDO GETELEMENT
+        var p1 = document.getElementsByTagName('p')[0];
+        document.write(`<br>No primeiro paragráfo está escrito: ${p1.innerText}`);
+        p1.style.color = 'slategrey';
+        //UTILIZANDO QUERY SELECTOR
+        var d = document.querySelector('div#clique');
+        d.style.color = 'red';
+    </script>
+</body>
+
+</html>
