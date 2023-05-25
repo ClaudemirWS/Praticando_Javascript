@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM (Document Object Model)</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        div#area {
+            font: normal 15pt arial;
+            background: green;
+            color: whitesmoke;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseleave="saiu()">
+        Me Clique :D
+    </div>
+    <script>
+        var d = document.getElementById('area');
+        d.addEventListener('click', clicar);
+        d.addEventListener('entrar', entrou);
+        d.addEventListener('sair', saiu)
+        //EVENTOS COM FUNÇÕES
+        function clicar() {
+            d.innerText = 'Clicou!';
+            d.style.background = 'red';
+        }
+        function entrou() {
+            d.innerText = 'Está em cima!';
+            d.style.background = 'blue';
+        }
+        function saiu() {
+            d.innerText = 'Me Clique :(';
+            d.style.background = 'green';
+        }
+    </script>
+</body>
+
+</html>
