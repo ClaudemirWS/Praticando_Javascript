@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            background-color: bisque;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Somando Números</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <button onclick="Somar()">Somar</button>
+    <h2 id="res">Resultado: </h2>
+    <script>
+        function Somar() {
+            var n1 = Number.parseInt(document.getElementById('txtn1').value);
+            var n2 = Number.parseInt(document.getElementById('txtn2').value);
+            var s = n1 + n2;
+            var res = document.getElementById('res');
+            res.innerHTML = `Resultado: ${n1} + ${n2} = ${s}`;
+        }
+    </script>
+</body>
+
+</html>
