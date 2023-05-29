@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Condições 2</title>
+    <style>
+        body {
+            background-color: rgb(165, 222, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analisando Velocidades</h1>
+    Velocidade do Veículo em Km/h: <input type="number" name="txtvel" id="txtvel">
+    <button onclick="Calcular()">Verificar</button>
+    <h3 id="sit">Situação:</h3>
+    <script>
+        function Calcular() {
+            var vel = Number.parseInt(document.getElementById('txtvel').value);
+            var txt = "";
+            if (vel <= 60){
+                txt = `Situação: ${vel} Km/h é uma velocidade aceitável.`;
+            } else if (vel > 60) {
+                txt = `Situação:${vel} Km/h está acima do permitido.`;
+            } else if (vel = NaN){
+                txt = "Insira uma velocidade";
+            }
+            var res = document.getElementById('sit');
+            res.innerHTML = txt;
+        }
+    </script>
+</body>
+
+</html>
