@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade Brasileira</title>
+    <style>
+        body {
+            background-color: darkcyan;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nacionalidade Brasielira</h1>
+    Escreva seu país de origem: <input type="text" name="nac" id="nac">
+    <button onclick="Conferir()">Conferir</button>
+    <p name="res" id="res"></p>
+    <script>
+        function Conferir() {
+            //PEGA A NACIONALIDADE EM STRING E A TORNA MAIÚSCULA
+            var nacio = String(document.getElementById('nac').value).toUpperCase();
+            //SALVA NO SCRIPT O PARAGRÁFO QUE IRÁ EXIBIR A MENSAGEM
+            var result = document.getElementById('res');
+            var txt = "";
+            //CONFERE A NACIONALIDADE E GRAVA A MENSAGEM CERTA
+            if (nacio == "BRASIL") {
+                txt = `Sua Nacionalidade é: Brasileiro.`;
+            } else {
+                txt = `Sua Nacionalidade é: Estrangeiro.`;
+            }
+            //EXIBE A MENSAGEM
+            result.innerHTML = txt;
+        }
+    </script>
+</body>
+
+</html>

@@ -27,7 +27,7 @@
             } else if (vel > 60) {
                 txt = `Situação:${vel} Km/h está acima do permitido.`;
             } else if (vel = NaN){
-                txt = "Insira uma velocidade";
+                txt = `Insira uma velocidade`;
             }
             var res = document.getElementById('sit');
             res.innerHTML = txt;
