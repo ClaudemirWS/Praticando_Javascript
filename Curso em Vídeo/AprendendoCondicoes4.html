@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da Semana</title>
+    <style>
+        body{
+            background-color: darkgoldenrod;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 name="dia" id="dia"></h2>
+    <script>
+        var dateGetter = new Date();
+        var msg = document.getElementById('dia');
+        var dia = dateGetter.getDay();
+        var nomeDia = "";
+        //CONDIÇÕES
+        switch(dia){
+            case 0: nomeDia = "Domingo"; break;
+            case 1: nomeDia = "Segunda"; break;
+            case 2: nomeDia = "Terça"; break;
+            case 3: nomeDia = "Quarta"; break;
+            case 4: nomeDia = "Quinta" ; break;
+            case 5: nomeDia = "Sexta"; break;
+            case 6: nomeDia = "Sábado"; break;
+        }
+        msg.innerHTML = `Olá, hoje é ${nomeDia}.`;
+    </script>
+</body>
+</html>
