@@ -1,0 +1,28 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        //FUNÇÕES
+        function mostrarMensagem() {
+            let mensagem = "Olá, mundo! Eu sou JavaScript!"; // variável local
+            alert(mensagem);
+        }
+        mostrarMensagem(); // Olá, mundo! Eu sou JavaScript!
+        alert(mensagem); // <-- Erro! "mensagem is not defined"   
+
+        let linguagem = "JavaScript.";
+        function mostrarMensagem() {
+            let mensagem = "Olá, mundo! Eu sou " + linguagem;
+            alert(mensagem);
+        }
+        mostrarMensagem();
+        alert(mensagem);
+    </script>
+</body>
+
+</html>

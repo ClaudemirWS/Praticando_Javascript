@@ -1,0 +1,44 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        //CONVERSÃO DE DADOS
+        let string1 = "123";
+        alert(typeof string); // string
+
+        let numero1 = 123;
+        alert(typeof numero); // number
+
+        let booleano = true;
+        alert(typeof booleano); // boolean  
+
+        let string2 = "123";
+        alert(typeof string); //string
+        
+        let numero2 = Number(string);
+        alert(typeof numero); //number 
+
+        let string3 = "1.23";
+        alert(typeof string); //string
+        
+        let numeroInt = parseInt(string);
+        alert("Valor: " + numeroInt + " - Tipo: " + typeof numero); 
+        let numeroFloat = parseFloat(string);
+        alert("Valor: " + numeroFloat + " - Tipo: " + typeof numeroFloat);  
+
+        let string4 = "1.23333333333";
+        alert(typeof string); //string
+        
+        let numero = parseFloat(string); // valor completo
+        alert("Valor: " + numero + " - Tipo: " + typeof numero); // valor completo
+        
+        alert("Valor: " + numero.toFixed(2) + " - Tipo: " + typeof numero); // valor limitado a 2 casas decimais   
+    </script>
+</body>
+
+</html>
