@@ -1,0 +1,58 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <body>
+        <form id="formulario">
+            <h1 id="titulo">Login</h1>
+            <p>
+                <label>E-mail:</label>
+                <input type="text" id="email" onblur="validarEmail()">
+            </p>
+            <p>
+                <label>Senha:</label>
+                <input type="password" id="senha" onblur="validarSenha()">
+            </p>
+            <input type="submit" value="Acessar" onclick="fazerLogin()">
+        </form>
+        <script type="text/javascript">
+            // Verificamos se o valor digitado possui o caracter @
+            function validarEmail() {
+                let email = document.getElementById("email").value;
+                if (email.includes('@')) {
+                    return true;
+                } else {
+                    alert("E-mail inválido!");
+                    return false;
+                }
+            }
+            // Verificamos se a senha é maior que 6 digitos
+            function validarSenha() {
+                let senha = document.getElementById("senha").value;
+                if (senha.length < 6) {
+                    alert("A senha precisa ter ao menos 6 caracteres");
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function fazerLogin() {
+                // Validamos se o email e a senha foram preenchidos corretamente
+                if (validarEmail() && validarSenha()) {
+                    // Se a validação retornar TRUE
+                    alert("Login efetuado!");
+                } else {
+                    // Se a validação retornar FALSE
+                    alert("Não foi possível realizar o login.");
+                }
+            }
+        </script>
+    </body>
+
+</html>

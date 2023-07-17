@@ -1,0 +1,40 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        .vermelho {
+            color: red;
+        }
+
+        .azul {
+            color: blue;
+        }
+    </style>
+    <table id="tabela">
+        <tr>
+            <td>O que você está aprendendo?:</td>
+            <td>
+                <label class="vermelho">
+                    <input type="radio" name="tecnologia" value="HTML"> HTML
+                </label>
+                <label class="vermelho">
+                    <input type="radio" name="tecnologia" value="CSS"> CSS
+                </label>
+                <label class="azul">
+                    <input type="radio" name="tecnologia" value="JavaScript" checked> JS
+                </label>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        const tecnologias = document.getElementsByClassName("vermelho");
+        alert("Classes encontradas: " + tecnologias.length);
+    </script>
+</body>
+
+</html>

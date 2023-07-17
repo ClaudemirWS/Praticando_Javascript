@@ -1,0 +1,33 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <table id="tabela">
+        <tr>
+            <td>O que você está aprendendo?:</td>
+            <td>
+                <label>
+                    <input type="radio" name="tecnologia" value="HTML"> HTML
+                </label>
+                <label>
+                    <input type="radio" name="tecnologia" value="CSS"> CSS
+                </label>
+                <label>
+                    <input type="radio" name="tecnologia" value="JavaScript" checked> JS
+                </label>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        // Buscamos todos os elementos com a tag input
+        let tecnologias = document.getElementsByName('tecnologia');
+        // Retornamos a quantidade de elementos encontrados
+        alert("Quantidade de tecnologias: " + tecnologias.length)
+    </script>
+</body>
+
+</html>

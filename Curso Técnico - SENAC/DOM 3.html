@@ -1,0 +1,42 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <body>
+        <h1>Compras do mercado</h1>
+        <p>
+            Nome do item:
+            <input type="text" id="item">
+        </p>
+
+        <button onclick="adicionar()">Adicionar</button>
+
+        <h3>Lista:</h3>
+        <div id="listaDeCompras">
+            <!-- Aqui será apresentado os itens cadastrados -->
+        </div>
+
+        <script type="text/javascript">
+            let listaDeItens = []; // Vetor para armazenar os itens adicionados
+
+            function adicionar() {
+                let novoItem = document.getElementById("item").value; // Obter o valor do novo item
+                listaDeItens.push(novoItem); // Adicionar o novo item ao vetor
+                document.getElementById("item").value = ""; // Limpar o campo de entrada de texto
+
+                // Exibir os itens armazenados no vetor na página
+                let conteudoLista = "";
+                for (let i = 0; i < listaDeItens.length; i++) {
+                    conteudoLista += "<p>" + listaDeItens[i] + "</p>";
+                }
+                document.getElementById("listaDeCompras").innerHTML = conteudoLista;
+            }
+        </script>
+    </body>
+
+</html>

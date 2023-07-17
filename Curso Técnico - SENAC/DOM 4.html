@@ -1,0 +1,55 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <body>
+        <h1>Compras do mercado</h1>
+        <p>
+            Nome do item:
+            <input type="text" id="item">
+        </p>
+
+        <button onclick="adicionar()">Adicionar</button>
+
+        <h3>Lista:</h3>
+        <div id="listaDeCompras">
+
+        </div>
+
+        <script type="text/javascript">
+            let listaDeItens = []; // Vetor para armazenar os itens adicionados
+
+            function adicionar() {
+                let novoItem = document.getElementById("item").value; // Obter o valor do novo item
+                listaDeItens.push(novoItem); // Adicionar o novo item ao vetor
+                document.getElementById("item").value = ""; // Limpar o campo de entrada de texto
+
+                // Exibir os itens armazenados no vetor na página (opcional)
+                let conteudoLista = "";
+                for (let i = 0; i < listaDeItens.length; i++) {
+                    // Adicionamos o item da lista com o evento onclick preparado para acionar a função riscar
+                    // Aqui, usaremos a posição do vetor para diferenciar um elemento do outro
+                    conteudoLista += "<p id='" + i + "' onclick='riscar(" + i + ")'>" + listaDeItens[i] + "</p>";
+                }
+                document.getElementById("listaDeCompras").innerHTML = conteudoLista;
+            }
+
+            function riscar(id) {
+                // Verificamos se o elemento não possui estilização
+                if (document.getElementById(id).style.cssText == "") {
+                    // Se não tiver, aplicamos o seguinte estilo
+                    document.getElementById(id).style.cssText = "text-decoration: line-through;"
+                } else {
+                    // Se tiver, removemos o estilo
+                    document.getElementById(id).style.cssText = ""
+                }
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,42 @@
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <body>
+        <button type="button" onclick="carregarAjax()">Carregar AJAX</button>
+        <div id="resultado">
+            <!-- Os dados carregados serão exibidos aqui -->
+        </div>
+
+        <script type="text/javascript">
+            function carregarAjax() {
+                //Criar um objeto XMLHttpRequest
+                let xhr = new XMLHttpRequest();
+
+                // Apontar em qual URL será feita a requisição
+                let url = 'http://example.com/api/data'
+
+                //Definir a função de manipulação de eventos para processar a resposta
+                xhr.onreadystatechange = function () {
+                    //Verificar se a resposta foi recebida com sucesso
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        //Processar a resposta
+                        let resposta = xhr.responseText;
+                        //Atualizar a página do usuário com os dados da resposta
+                        document.getElementById('resultado').innerHTML = resposta;
+                    }
+                };
+
+                //Realizar a requisição
+                xhr.open('GET', url, true);
+                xhr.send();
+            }
+        </script>
+    </body>
+
+</html>
