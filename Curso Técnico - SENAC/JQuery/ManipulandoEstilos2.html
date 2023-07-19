@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Função addClass()</title>
+</head>
+
+<body>
+  <!--CSS-->
+  <style>
+    .destaque {
+      color: blue;
+      background-color: #f6d8ce;
+    }
+  </style>
+
+  <p>
+    Esse trecho terá uma cor clara de fundo e cor da letra azul, devido a função addClass() adicionar a tag "p" para a
+    classe destaque.
+  </p>
+  <!--Arquivo com os códigos padrão do jQuery-->
+  <script src="jquery.js"></script>
+  <!--Função addClass-->
+  <script>
+    //Adiconando uma classe aos paragráfos
+    $(document).ready(function () {
+      $('p').addClass('destaque');
+    })
+  </script>
+</body>
+
+</html>

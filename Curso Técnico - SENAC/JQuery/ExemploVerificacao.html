@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Evento Verificação</title>
+</head>
+
+<body>
+    <div>
+        Digite a senha: <input type="password" id="txtSenha" />
+        <span id="spnDica" style="font-size: smaller; color: red;">A senha deve ter ao menos 6 caracteres</span>
+    </div>
+    <div>
+        Repita a senha: <input type="password" id="txtSenhaRepete" />
+    </div>
+    <div>
+        <button id="btnOk">Definir Senha</button>
+        <span id="spnResultado"></span>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            //ao iniciar a página, esconte a dica
+            $("#spnDica").hide();
+
+            //evento dispara ao alterar valor e sair do campo
+            $("#txtSenha").change(function () {
+                let senha = $("#txtSenha").val();
+                if (senha.length < 6) {
+                    $("#spnDica").show();
+                } else {
+                    $("#spnDica").hide();
+                }
+            });
+
+            //evento dispara ao clique do botão
+            $("#btnOk").click(function () {
+                let senha = $("#txtSenha").val(),
+                    senha2 = $("#txtSenhaRepete").val();
+
+                if (senha.length >= 6 && senha == senha2) {
+                    //ações encadeadas: primeiro altera conteúdo depois altera cor
+                    $("#spnResultado").text("Senha Válida!").css("color", "green");
+                } else {
+                    $("#spnResultado").text("Senha Inválida!").css("color", "red");
+                }
+            });
+
+        })
+    </script>
+</body>
+
+</html>

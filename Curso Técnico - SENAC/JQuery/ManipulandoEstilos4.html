@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Função removeClass()</title>
+    <style>
+        .destaque {
+            color: red;
+            background-color: #f6d8ce;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="destaque">Tag com a classe "destaque"</p>
+    <script src="jquery.js"></script>
+    <script>
+        //Remove classe da tag
+        $(document).ready(function () {
+            alert("A seguir vamos remover a classe 'destaque'.");
+            $('p').removeClass('destaque');
+        })
+    </script>
+</body>
+
+</html>

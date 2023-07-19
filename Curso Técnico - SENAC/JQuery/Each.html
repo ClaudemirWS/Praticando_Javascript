@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Função Each</title>
+    <style>
+        .off {
+            background-color: #ccc;
+        }
+
+        .on {
+            background-color: red;
+        }
+
+        li {
+            border-radius: 4px;
+            padding: 8px;
+            background-color: navy;
+            color: white;
+            display: inline;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        input.busca {
+            margin-left: 40px;
+            width: 350px;
+            height: 25px;
+            font-size: 16px;
+            padding: 4px;
+        }
+    </style>
+    <script src="/JQuery/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#filtro').keyup(function () {
+                var termo = $('#filtro').val().toLowerCase()
+                $('ul.nomes li').each(function (index) {
+                    $(this).addClass('off')
+                    $(this).removeClass('on')
+                    var li_texto = $(this).text().toLowerCase()
+                    if (li_texto.search(termo) != -1 && termo.length > 1) {
+                        $(this).removeClass('off')
+                        $(this).addClass('on')
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <input type="text" id="filtro" class="busca" />
+    <ul class="nomes">
+        <li>Adriana</li>
+        <li>Alice</li>
+        <li>Daltron</li>
+        <li>Fabiano</li>
+        <li>Fernando</li>
+        <li>Fabrício</li>
+        <li>Lucas</li>
+        <li>Gustavo</li>
+        <li>Mauro</li>
+        <li>Ronald</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="jquery.js"></script>
+    <style>
+        span.destaque {
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.destino').bind('mouseover mouseout', function () {
+                $(this).children().toggleClass('destaque')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h4>Escolha seu destino</h4>
+    <div class="destino">
+        <span>São Paulo</span>
+        <span><b>|+| Mais informações</b></span>
+    </div>
+    <div class="destino">
+        <span>Rio de Janeiro</span>
+        <span><b>|+| Mais informações</b></span>
+    </div>
+</body>
+
+</html>

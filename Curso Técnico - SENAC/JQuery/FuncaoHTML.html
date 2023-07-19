@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+        b {
+            color: red;
+        }
+
+        i {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1"> Este texto está dentro de uma tag "p" e o seu id é "p1"</p>
+    <button id="copiar">Copiar texto de p2 para p1</button>
+    <p id="p2">
+        Este texto está está dentro de uma tag "p" e o seu id é "p2".
+        <b>Este trecho está em negrito!</b>
+        <i>Este trecho está em itálico!</i>
+    </p>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#copiar').click(function () {
+                var p2_conteudo = $('#p2').html();
+                $('#p1').html(p2_conteudo);
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Função toggleClass()</title>
+    <style>
+        .destaque {
+            color: aquamarine;
+            background-color: #561702;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="manchete">
+        Clique na linha para adicionar ou remover a sua classe!
+    </p>
+
+    <script src="jquery.js"></script>
+    <script>
+        //Adiciona e remove classe
+        $(document).ready(function () {
+            $('#manchete').click(function () {
+                $(this).toggleClass('destaque'); //O this funciona como o #manchete
+            })
+        })
+    </script>
+</body>
+
+</html>

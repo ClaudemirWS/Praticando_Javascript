@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <b>Digite o nome de uma cor:</b>
+    <input type="text" id="nome" name="nome" />
+    <button id="confirmar">Aplicar</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#confirmar').click(function () {
+                var novaCor = $('#nome').val()
+                $('body').css('background-color', novaCor)
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="/JQuery/jquery.js"></script>
+    <style>
+        ul {
+            font-family: monospace;
+        }
+
+        button {
+            display: block;
+            margin: 20px 0px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#carregar').click(function () {
+                $.ajax({
+                    url: 'tabela.txt',
+                    context: $('#lista'),
+                    type: 'GET',
+                    success: function (data) {
+                        this.append(data)
+                    },
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h4>Melhores destinos</h4>
+    <button id="carregar">Carregar lista</button>
+    <ul id="lista"></ul>
+</body>
+
+</html>

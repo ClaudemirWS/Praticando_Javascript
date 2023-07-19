@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="/JQuery/jquery.js"></script>
+    <script>
+        //FADE IN e FADE OUT
+        $(document).ready(function () {
+            $('#desaparecer').click(function () {
+                $('#foto').fadeOut()
+            })
+            $('#aparecer').click(function () {
+                $('#foto').fadeIn()
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="desaparecer">Desaparecer</button>
+    <button id="aparecer">Aparecer</button>
+    <br />
+    <img id="foto" src="" alt="Sem foto" />
+</body>
+
+</html>

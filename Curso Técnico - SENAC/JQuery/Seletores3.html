@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletores</title>
+</head>
+
+<body>
+    <h2>Este é um título</h2>
+    <p>Este é um parágrafo</p>
+    <p>Este é outro parágrafo</p>
+
+    <button>Clique aqui os parágrafos</button>
+    <span>(note que até a observação abaixo irá ser ocultada, devido a estar em uma tag p)</span>
+    <p>Selecionamos os dois parágrafos (tag P) e ocultamos diretamente pela tag.</p>
+
+    <script src="jquery.js"></script>
+    <script>
+        //Usando seletor de tag
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        div,
+        p {
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        #menu {
+            background-color: lightgreen;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#insertB').click(function () {
+                $('<p>elemento inserido antes</p>').insertBefore('#menu')
+            })
+            $('#insertA').click(function () {
+                $('<p>elemento inserido depois</p>').insertAfter('#menu')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="insertB">InsertBefore P (Inserir antes)</button>
+    <button id="insertA">InsertAfter P(Inserir depois)</button>
+    <h1>Título principal</h1>
+    <div id="menu">Porções: arroz, salada e carne.</div>
+    <div id="artigos">Conheça mais sobre o restaurante</div>
+</body>
+
+</html>

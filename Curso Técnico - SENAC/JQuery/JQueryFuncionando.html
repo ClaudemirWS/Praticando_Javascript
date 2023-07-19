@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcionamento do jQuery</title>
+</head>
+
+<body>
+
+    <script src="jquery.js"></script>
+    <script>
+        //$() é a chamada do jquery para qualquer função
+        $(document).ready(function () {
+            alert('jQuery funcionando corretamente!')
+        })
+        //Função anônima
+        $(document).ready(function () {
+            alert('Esta é uma função anônima!!')
+        })
+        //Função normal 
+        $(document).ready(teste)
+        function teste() {
+            alert('Esta é uma função normal do JavaScript!')
+        }
+    </script>
+</body>
+
+</html>

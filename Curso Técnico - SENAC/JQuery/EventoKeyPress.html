@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Evento Keypress</title>
+</head>
+
+<body>
+    Digite seu nome:
+    <input type="text" id="nome" />
+    <div id="exibe"></div>
+
+    <script src="/JQuery/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#nome').keypress(function (evento) {
+                $('#exibe').append(
+                    'Código ascii da tecla digitada: ' + evento.keyCode + '<br>',
+                )
+            })
+        })
+    </script>
+</body>
+
+</html>

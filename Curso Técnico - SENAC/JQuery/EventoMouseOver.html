@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div id="texto">
+        <p>Ao passar o cursor sobre esse texto, a cor de fundo ficará vermelha!</p>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#texto').mouseover(function () {
+                $(this).css('background-color', 'red')
+            })
+        })
+    </script>
+</body>
+
+</html>

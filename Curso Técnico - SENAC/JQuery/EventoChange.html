@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Evento Change</title>
+</head>
+
+<body>
+    Selecione o modelo de carro:
+    <select id="modelos">
+        <option></option>
+
+        <option value="foto01.jpg">Carro 01</option>
+        <option value="foto02.jpg">Carro 02</option>
+        <option value="foto03.jpg">Carro 03</option>
+    </select>
+    <img src="" id="foto" />
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#foto').hide();
+            $('#modelos').change(function () {
+                $('#foto').attr('src', $(this).val());
+                $('#foto').show();
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletores</title>
+</head>
+
+<body>
+    <h2>Este é um título</h2>
+    <p>Este é um parágrafo</p>
+    <p id="testeId">Este é outro parágrafo</p>
+
+    <button>Clique aqui para ocultar segundo parágrafo</button>
+    <p>Selecionamos o segundo parágrafo (tag p) através do seletor, usando o id.</p>
+
+    <script src="jquery.js"></script>
+    <script>
+        //Definindo uma função para o clique no botão
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#testeId").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
