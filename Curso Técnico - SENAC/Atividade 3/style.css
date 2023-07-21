@@ -1,0 +1,57 @@
+/*DEFINIÇÕES DE ESTILO BÁSICAS DO SITE*/
+
+section {
+    margin-left: 20px;
+}
+
+.main {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana;
+}
+
+.total {
+    text-align: right;
+}
+
+/*ESTILO PARA O FORMULÁRIO */
+
+.formValor {
+    margin-bottom: 20px;
+}
+
+
+.button {
+    padding: 10px;
+}
+
+/*ESTILO PARA O CAMPO PIX*/
+.pix {
+    border: 2px solid #000;
+    padding: 10px;
+    width: 300px;
+    display: none;
+}
+
+.pix label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+/*ESTILO PARA O CAMPO CARTÃO*/
+
+.cartao {
+    border: 2px solid black;
+    padding: 10px;
+    width: 300px;
+}
+
+.cartao label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+.cartao select {
+    width: 165px;
+}

@@ -5,10 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-
+    <!-- RECEBE VALOR E SELECIONA TIPO DE PAGAMENTO-->
+    <div>
+        <section>
+            <h3>SEU PAGAMENTO</h3>
+            <form>
+                <div class="formValor">
+                    Valor: <input type="text" name="valor" id="valor">
+                </div>
+                <div class="formValor">
+                    <input type="radio" name="formapag" value="pix"> PIX
+                    <input type="radio" name="formapag" value="cartao"> Cartão de Crédito
+                </div>
+                <div class="formValor">
+                    <input class="button" type="button" value="Informar dados" onclick="Carregar()">
+                </div>
+            </form>
+        </section>
+    </div>
+    <!-- DIV DO PIX -->
+    <div>
+        <section class="pix" id="pix">
+            <h3>PIX</h3>
+            <div>
+                <label for="chave">Chave PIX</label>
+                <input type="text" id="chave" name="chave">
+            </div>
+            <div>
+                <p class="total" id="total">Total: R$ 0,00</p>
+            </div>
+        </section>
+    </div>
+    <!-- DIV DO CARTÃO DE CRÉDITO -->
+    <div>
+        <section class="cartao" id="cartao">
+            <h3>CARTÃO DE CRÉDITO</h3>
+            <form>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                <div>
+                    <label for="titular">Titular</label>
+                    <input type="text" id="titular" name="titular">
+                </div>
+                <div>
+                    <label for="codigo">Cód-Segurança</label>
+                    <input type="text" id="codigo" name="codigo">
+                </div>
+                <div>
+                    <label for="vencimento">Vencimento</label>
+                    <input type="text" id="vencimento" name="vencimento">
+                </div>
+                <div>
+                    <label for="parcelas">Parcelas</label>
+                    <select name="parcelas">
+                        <option value="1x" id="1x">1x</option>
+                        <option value="2x" id="2x">2x</option>
+                        <option value="3x" id="3x">3x</option>
+                        <option value="4x" id="4x">4x</option>
+                        <option value="5x" id="5x">5x</option>
+                    </select>
+                </div>
+            </form>
+            <div>
+                <p class="total" id="total">Total: R$ 0,00</p>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
