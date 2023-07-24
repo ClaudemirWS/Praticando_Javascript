@@ -37,7 +37,7 @@
                 <input type="text" id="chave" name="chave">
             </div>
             <div>
-                <p class="total" id="total">Total: R$ 0,00</p>
+                <p class="total" id="totalPix">Total: R$ 0,00</p>
             </div>
         </section>
     </div>
@@ -49,6 +49,8 @@
                 <div>
                     <label for="numero">Número</label>
                     <input type="text" id="numero" name="numero">
+                    <img id="imagemCartao" src="" alt="">
+                    <p id="mensagemInvalido" class="invalido"></p>
                 </div>
                 <div>
                     <label for="titular">Titular</label>
@@ -64,17 +66,18 @@
                 </div>
                 <div>
                     <label for="parcelas">Parcelas</label>
-                    <select name="parcelas">
-                        <option value="1x" id="1x">1x</option>
-                        <option value="2x" id="2x">2x</option>
-                        <option value="3x" id="3x">3x</option>
-                        <option value="4x" id="4x">4x</option>
-                        <option value="5x" id="5x">5x</option>
+                    <select name="parcelas" id="parcelas"">
+                        <option value="1">1x</option>
+                        <option value="2">2x</option>
+                        <option value="3">3x</option>
+                        <option value="4">4x</option>
+                        <option value="5">5x</option>
                     </select>
+                    <p id="valorParcelas"></p>
                 </div>
             </form>
             <div>
-                <p class="total" id="total">Total: R$ 0,00</p>
+                <p class="total" id="totalCartao">Total: R$ 0,00</p>
             </div>
         </section>
     </div>

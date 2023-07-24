@@ -39,11 +39,11 @@ section {
 }
 
 /*ESTILO PARA O CAMPO CARTÃO*/
-
 .cartao {
     border: 2px solid black;
     padding: 10px;
-    width: 300px;
+    width: 400px;
+    display: inline-block;
 }
 
 .cartao label {
@@ -52,6 +52,19 @@ section {
     margin-bottom: 5px;
 }
 
-.cartao select {
+.cartao input {
     width: 165px;
+}
+
+.cartao img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.invalido {
+    color: red;
+    margin-top: 5px;
+    display: none;
 }
