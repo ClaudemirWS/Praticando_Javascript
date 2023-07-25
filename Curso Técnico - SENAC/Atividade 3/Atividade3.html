@@ -19,7 +19,7 @@
                     Valor: <input type="text" name="valor" id="valor">
                 </div>
                 <div class="formValor">
-                    <input type="radio" name="formapag" value="pix"> PIX
+                    <input type="radio" name="formapag" value="pix" checked> PIX
                     <input type="radio" name="formapag" value="cartao"> Cartão de Crédito
                 </div>
                 <div class="formValor">
@@ -40,7 +40,7 @@
                 <p class="total" id="totalPix">Total: R$ 0,00</p>
             </div>
             <div class="pagar">
-                <button onclick="mensagemPagamento()">Pagar</button>
+                <input class="button" type="button" value="Pagar" onclick="mensagemPagamento()">
             </div>
         </section>
     </div>
@@ -83,13 +83,14 @@
                 <p class="total" id="totalCartao">Total: R$ 0,00</p>
             </div>
             <div class="pagar">
-                <button onclick="mensagemPagamento()">Pagar</button>
+                <input class="button" type="button" value="Pagar" onclick="mensagemPagamento()">
             </div>
         </section>
     </div>
-    <section class="mensagem">
-        <p id="mensagemFinal"></p>
-    </section>
+    <div>
+        <section class="mensagem">
+            <p id="mensagemFinal"></p>
+        </section>
+    </div>
 </body>
-
 </html>

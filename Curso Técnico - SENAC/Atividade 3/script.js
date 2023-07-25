@@ -1,19 +1,16 @@
 function carregaFormaDePagamento() {
 
     //Limpa qualquer mensagem
-    mensagemFinal = document.getElementById('mensagemFinal');
-    mensagemFinal.style.display = 'none';
+    document.getElementById('mensagemFinal').style.display = 'none';
+
 
     //Só apresenta as opções se houver um valor recebido
-    if (document.getElementById('valor').value == '') {
-        mensagemErro();
-    } else {
+    if (document.getElementById('valor').value != '') {
 
         var opcoesPagamento = document.getElementsByName('formapag');
 
         //Percorre os radio buttons para encontrar o selecionado
         for (var i = 0; i < opcoesPagamento.length; i++) {
-            //Se algum dos radio estiverem checados, pega o valor
             if (opcoesPagamento[i].checked) {
                 opcaoSelecionada = opcoesPagamento[i].value;
                 break;
@@ -49,10 +46,9 @@ function carregaFormaDePagamento() {
             document.getElementById('parcelas').value = '1';
             document.getElementById('mensagemInvalido').style.display = 'none';
             atualizarValorParcelas();
-
-        } else if (opcaoSelecionada == null) {
-            alert("Selecione uma forma de pagamento!");
         }
+    } else {
+        mensagemErro();
     }
 }
 
@@ -109,13 +105,12 @@ function bandeiraCartao() {
 
 //Texto e cor ao pagamento ser realizado
 function mensagemPagamento() {
-
     document.getElementById('cartao').style.display = 'none';
     document.getElementById('pix').style.display = 'none';
-    finalPagamento = document.getElementById('mensagemFinal');
-    finalPagamento.style.display = 'block';
-    finalErro.style.color = 'green';
-    finalPagamento.innerHTML = 'Pagamento efetuado com sucesso!';
+    mensagem = document.getElementById('mensagemFinal');
+    mensagem.style.display = 'block';
+    mensagem.style.color = 'green';
+    mensagem.innerHTML = 'Pagamento efetuado com sucesso!';
 
 }
 
@@ -123,8 +118,8 @@ function mensagemPagamento() {
 function mensagemErro() {
     document.getElementById('cartao').style.display = 'none';
     document.getElementById('pix').style.display = 'none';
-    finalErro = document.getElementById('mensagemFinal');
-    finalErro.style.display = 'block';
-    finalErro.style.color = 'red';
-    finalErro.innerHTML = 'Digite um valor para o pagamento.';
+    mensagem = document.getElementById('mensagemFinal');
+    mensagem.style.display = 'block';
+    mensagem.style.color = 'red';
+    mensagem.innerHTML = 'Digite um valor para o pagamento.';
 }
