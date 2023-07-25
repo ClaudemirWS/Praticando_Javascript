@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
                     <input type="radio" name="formapag" value="cartao"> Cartão de Crédito
                 </div>
                 <div class="formValor">
-                    <input class="button" type="button" value="Informar dados" onclick="Carregar()">
+                    <input class="button" type="button" value="Informar dados" onclick="carregaFormaDePagamento()">
                 </div>
             </form>
         </section>
@@ -39,6 +39,9 @@
             <div>
                 <p class="total" id="totalPix">Total: R$ 0,00</p>
             </div>
+            <div class="pagar">
+                <button onclick="mensagemPagamento()">Pagar</button>
+            </div>
         </section>
     </div>
     <!-- DIV DO CARTÃO DE CRÉDITO -->
@@ -48,7 +51,7 @@
             <form>
                 <div>
                     <label for="numero">Número</label>
-                    <input type="text" id="numero" name="numero">
+                    <input type="text" id="numero" name="numero" onchange="bandeiraCartao()">
                     <img id="imagemCartao" src="" alt="">
                     <p id="mensagemInvalido" class="invalido"></p>
                 </div>
@@ -66,7 +69,7 @@
                 </div>
                 <div>
                     <label for="parcelas">Parcelas</label>
-                    <select name="parcelas" id="parcelas"">
+                    <select name="parcelas" id="parcelas" onchange="atualizarValorParcelas()">
                         <option value="1">1x</option>
                         <option value="2">2x</option>
                         <option value="3">3x</option>
@@ -79,8 +82,14 @@
             <div>
                 <p class="total" id="totalCartao">Total: R$ 0,00</p>
             </div>
+            <div class="pagar">
+                <button onclick="mensagemPagamento()">Pagar</button>
+            </div>
         </section>
     </div>
+    <section class="mensagem">
+        <p id="mensagemFinal"></p>
+    </section>
 </body>
 
 </html>
