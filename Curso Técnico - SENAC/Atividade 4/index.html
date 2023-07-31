@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="caminho/do/seu/logo.png" alt="Logo da Empresa" class="logo">
+    </div>
+
+    <div class="content-container">
+        <div class="content-block">
+            <h2>Título do Bloco Esquerdo</h2>
+            <p>Texto do bloco esquerdo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="btn-saiba-mais">Saiba Mais</button>
+        </div>
+        <div class="content-block">
+            <img src="caminho/da/sua/imagem.jpg" alt="Imagem do Bloco Direito">
+        </div>
+    </div>
+
+    <h3 class="center">Título abaixo dos blocos</h3>
+
+    <div class="content-container">
+        <div class="dual-content-block">
+            <img src="caminho/da/outra/imagem.jpg" alt="Imagem do Bloco Esquerdo">
+            <div class="dual-content-text">
+                <h3>Título do Segundo Bloco</h3>
+                <p>Texto do segundo bloco. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="dual-content-block">
+            <img src="caminho/da/outra/imagem.jpg" alt="Imagem do Bloco Direito">
+            <div class="dual-content-text">
+                <h3>Título do Terceiro Bloco</h3>
+                <p>Texto do terceiro bloco. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-block">
+        <h2>Título Centralizado</h2>
+        <div class="image-container">
+            <div class="image-with-text">
+                <img src="caminho/da/primeira/imagem.jpg" alt="Primeira Imagem">
+                <p>Texto da Primeira Imagem</p>
+            </div>
+            <div class="image-with-text">
+                <img src="caminho/da/segunda/imagem.jpg" alt="Segunda Imagem">
+                <p>Texto da Segunda Imagem</p>
+            </div>
+            <div class="image-with-text">
+                <img src="caminho/da/terceira/imagem.jpg" alt="Terceira Imagem">
+                <p>Texto da Terceira Imagem</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-block">
+        <div class="form-left">
+            <h3>Título do Bloco com Formulário</h3>
+            <p>Texto do bloco com formulário. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="form-center">
+            <form class="custom-form">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+                </div>
+                <div>
+                    <label for="data-entrada">Data de entrada:</label>
+                    <input type="date" id="data-entrada" name="data-entrada" required>
+                </div>
+                <div>
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes" placeholder="Insira suas observações"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="form-right">
+            <form class="custom-form">
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
+                </div>
+                <div>
+                    <label for="data-saida">Data de saída:</label>
+                    <input type="date" id="data-saida" name="data-saida" required>
+                </div>
+                <div>
+                    <label for="adultos">Adultos:</label>
+                    <input type="number" id="adultos" name="adultos" placeholder="Quantidade de adultos" required>
+                </div>
+                <div>
+                    <label for="criancas">Crianças:</label>
+                    <input type="number" id="criancas" name="criancas" placeholder="Quantidade de crianças" required>
+                </div>
+            </form>
+            <div>
+                <button class="btn-enviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
