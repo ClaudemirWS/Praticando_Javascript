@@ -10,102 +10,145 @@
 </head>
 
 <body>
-    <div class="logo-container">
-        <img src="caminho/do/seu/logo.png" alt="Logo da Empresa" class="logo">
+    <!-- LOGO DO HOTEL -->
+    <div class="logo">
+        <img src="/imagens/icone/logo.png" alt="Logo da Empresa" class="logo-imagem">
     </div>
 
-    <div class="content-container">
-        <div class="content-block">
-            <h2>Título do Bloco Esquerdo</h2>
-            <p>Texto do bloco esquerdo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button class="btn-saiba-mais">Saiba Mais</button>
-        </div>
-        <div class="content-block">
-            <img src="caminho/da/sua/imagem.jpg" alt="Imagem do Bloco Direito">
-        </div>
-    </div>
-
-    <h3 class="center">Título abaixo dos blocos</h3>
-
-    <div class="content-container">
-        <div class="dual-content-block">
-            <img src="caminho/da/outra/imagem.jpg" alt="Imagem do Bloco Esquerdo">
-            <div class="dual-content-text">
-                <h3>Título do Segundo Bloco</h3>
-                <p>Texto do segundo bloco. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- APRESENTAÇÃO DO HOTEL -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="margin-top: 20px;">
+                    <img src="/imagens/fotos/prop.jpg" alt="Imagem de apresentação" class="img-fluid">
+                </div>
             </div>
-        </div>
-        <div class="dual-content-block">
-            <img src="caminho/da/outra/imagem.jpg" alt="Imagem do Bloco Direito">
-            <div class="dual-content-text">
-                <h3>Título do Terceiro Bloco</h3>
-                <p>Texto do terceiro bloco. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="col-sm-6">
+                <div style="margin-top: 20px;">
+                    <h5><strong>Sinta o conforto acolhedor de nossas hospedagens</strong></h5>
+                    <p>Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+                    <button class="btn-estilo">SAIBA MAIS</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="center-block">
-        <h2>Título Centralizado</h2>
-        <div class="image-container">
-            <div class="image-with-text">
-                <img src="caminho/da/primeira/imagem.jpg" alt="Primeira Imagem">
-                <p>Texto da Primeira Imagem</p>
+    <hr>
+
+    <!-- INFORMAÇÕES SOBRE HOSPEDAGEM -->
+    <h5 class="center" style="margin-top: 40px;"><strong>POR QUE SE HOSPEDAR EM NOSSOS HOTÉIS?</strong></h5>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="margin-top: 20px;">
+                <div class="d-flex align-items-center">
+                    <img src="/imagens/icone/cafe.png" alt="Imagem do Bloco Esquerdo" class="img-fluid me-3"
+                        style="max-width: 50px;">
+                    <div>
+                        <h5><strong>Delicioso café da manhã.</strong></h5>
+                        <p>Incluso em todas as diárias.</p>
+                    </div>
+                </div>
             </div>
-            <div class="image-with-text">
-                <img src="caminho/da/segunda/imagem.jpg" alt="Segunda Imagem">
-                <p>Texto da Segunda Imagem</p>
-            </div>
-            <div class="image-with-text">
-                <img src="caminho/da/terceira/imagem.jpg" alt="Terceira Imagem">
-                <p>Texto da Terceira Imagem</p>
-            </div>
-        </div>
-    </div>
-    <div class="form-block">
-        <div class="form-left">
-            <h3>Título do Bloco com Formulário</h3>
-            <p>Texto do bloco com formulário. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="form-center">
-            <form class="custom-form">
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+            <div class="col-sm-6" style="margin-top: 20px;">
+                <div class="d-flex align-items-center">
+                    <img src="/imagens/icone/local.png" alt="Imagem do Bloco Direito" class="img-fluid me-3"
+                        style="max-width: 50px;">
+                    <div>
+                        <h5><strong>Fácil acesso.</strong></h5>
+                        <p>Perto de todos pontos turísticos.</p>
+                    </div>
                 </div>
-                <div>
-                    <label for="data-entrada">Data de entrada:</label>
-                    <input type="date" id="data-entrada" name="data-entrada" required>
-                </div>
-                <div>
-                    <label for="observacoes">Observações:</label>
-                    <textarea id="observacoes" name="observacoes" placeholder="Insira suas observações"></textarea>
-                </div>
-            </form>
-        </div>
-        <div class="form-right">
-            <form class="custom-form">
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail" required>
-                </div>
-                <div>
-                    <label for="data-saida">Data de saída:</label>
-                    <input type="date" id="data-saida" name="data-saida" required>
-                </div>
-                <div>
-                    <label for="adultos">Adultos:</label>
-                    <input type="number" id="adultos" name="adultos" placeholder="Quantidade de adultos" required>
-                </div>
-                <div>
-                    <label for="criancas">Crianças:</label>
-                    <input type="number" id="criancas" name="criancas" placeholder="Quantidade de crianças" required>
-                </div>
-            </form>
-            <div>
-                <button class="btn-enviar">Enviar</button>
             </div>
         </div>
     </div>
+
+    <!-- SUÍTES -->
+    <div style="max-width: 95%; margin: 0 auto; padding: 20px;">
+        <div>
+            <div class="text-center">
+                <h4>NOSSOS QUARTOS</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/imagens/fotos/solteiro.jpg" alt="Primeira Imagem" class="img-fluid">
+                    <div class="center">
+                        <p>Suíte Solteiro</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imagens/fotos/casal.jpg" alt="Segunda Imagem" class="img-fluid">
+                    <div class="center">
+                        <p>Suíte Casal</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imagens/fotos/master.jpg" alt="Terceira Imagem" class="img-fluid">
+                    <div class="center">
+                        <p>Suíte Master</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- FORMULÁRIO PARA RESERVAS -->
+    <div class="container">
+        <div class="row">
+            <!-- COLUNA ESQUERDA -->
+            <div class="col-md-4 mb-4">
+                <h4><strong>FAÇA SUA RESERVA</strong></h4>
+                <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade
+                    e repassando detalhes da reserva.</p>
+            </div>
+            <!-- COLUNA CENTRAL -->
+            <div class="col-md-4 mb-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Insira seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-entrada">Data de entrada:</label>
+                        <input type="date" id="data-entrada" name="data-entrada" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-saida">Data de saída:</label>
+                        <input type="date" id="data-saida" name="data-saida" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <!-- COLUNA DIREITA -->
+            <div class="col-md-4 mb-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-control"
+                            placeholder="Insira seu e-mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="adultos">Adultos:</label>
+                        <input type="number" id="adultos" name="adultos" class="form-control"
+                            placeholder="Quantidade de adultos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="criancas">Crianças:</label>
+                        <input type="number" id="criancas" name="criancas" class="form-control"
+                            placeholder="Quantidade de crianças">
+                    </div>
+                    <div class="mb-3">
+                        <label for="observacoes">Observações:</label>
+                        <textarea id="observacoes" name="observacoes" class="form-control"
+                            placeholder="Escreva aqui"></textarea>
+                    </div>
+                    <button class="btn-estilo">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
