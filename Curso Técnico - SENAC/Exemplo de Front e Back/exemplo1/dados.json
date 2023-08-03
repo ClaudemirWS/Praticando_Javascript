@@ -1,0 +1,14 @@
+{
+  "cadastros": [
+    {
+      "login": "senac",
+      "senha": "senacead",
+      "id": 1
+    },
+    {
+      "login": "aluno",
+      "senha": "123",
+      "id": 2
+    }
+  ]
+}

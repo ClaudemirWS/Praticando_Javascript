@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Máscara de formulário</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <h1>Máscaras com JQuery Mask</h1>
+    <form method="post" action="" id="frm">
+        <p>
+            <label>Telefone</label><br>
+            <input type="text" id="telefone">
+        </p>
+
+        <p>
+            <label>CEP</label><br>
+            <input type="text" id="cep">
+        </p>
+
+        <p>
+            <label>CPF</label><br>
+            <input type="text" id="cpf">
+        </p>
+
+        <p>
+            <label>CNPJ</label><br>
+            <input type="text" id="cnpj">
+        </p>
+
+        <p>
+            <label>Data</label><br>
+            <input type="text" id="data">
+        </p>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <script>
+        $(document).ready(function () {
+            $('#telefone').mask('(00) 00000-0000');
+            $('#cep').mask('00000-000');
+            $('#cpf').mask('000.000.000-00');
+            $('#cnpj').mask('00.000.000/0000-00');
+            $('#data').mask('00/00/0000');
+        });
+    </script>
+
+</body>
+
+</html>

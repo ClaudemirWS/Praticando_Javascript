@@ -1,0 +1,14 @@
+{
+    "noticias": [
+        {
+            "titulo": "Java",
+            "conteudo": "Linguagem Java",
+            "id": 1
+        },
+        {
+            "titulo": "JSON SERVER",
+            "conteudo": "Utilizado para API ficticia",
+            "id": 2
+        }
+    ]
+}
