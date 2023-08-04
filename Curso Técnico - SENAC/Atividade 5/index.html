@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myHotel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- LOGO DO HOTEL -->
+    <div class="logo">
+        <img src="/imagens/icone/logo.png" alt="Logo da Empresa" class="logo-imagem">
+    </div>
+
+    <!-- APRESENTAÇÃO DO HOTEL -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="margin-top: 20px;">
+                    <img src="/imagens/fotos/prop.jpg" alt="Imagem de apresentação" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div style="margin-top: 20px;">
+                    <h5><strong>Sinta o conforto acolhedor de nossas hospedagens</strong></h5>
+                    <p>Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+                    <button class="btn-estilo">SAIBA MAIS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- INFORMAÇÕES SOBRE HOSPEDAGEM -->
+    <h5 class="text-center" style="margin-top: 40px;"><strong>POR QUE SE HOSPEDAR EM NOSSOS HOTÉIS?</strong></h5>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="margin-top: 20px;">
+                <div class="d-flex align-items-center">
+                    <img src="/imagens/icone/cafe.png" alt="Imagem do Bloco Esquerdo" class="img-fluid me-3"
+                        style="max-width: 50px;">
+                    <div>
+                        <h5><strong>Delicioso café da manhã.</strong></h5>
+                        <p>Incluso em todas as diárias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 20px;">
+                <div class="d-flex align-items-center">
+                    <img src="/imagens/icone/local.png" alt="Imagem do Bloco Direito" class="img-fluid me-3"
+                        style="max-width: 50px;">
+                    <div>
+                        <h5><strong>Fácil acesso.</strong></h5>
+                        <p>Perto dos principais pontos turísticos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUÍTES -->
+    <div style="max-width: 95%; margin: 0 auto; padding: 20px;">
+        <div>
+            <div class="text-center">
+                <h5>NOSSOS QUARTOS</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/imagens/fotos/solteiro.jpg" alt="Primeira Imagem" class="img-fluid">
+                    <div class="text-center">
+                        <p>Suíte Solteiro</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imagens/fotos/casal.jpg" alt="Segunda Imagem" class="img-fluid">
+                    <div class="text-center">
+                        <p>Suíte Casal</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/imagens/fotos/master.jpg" alt="Terceira Imagem" class="img-fluid">
+                    <div class="text-center">
+                        <p>Suíte Master</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- FORMULÁRIO PARA RESERVAS -->
+    <div class="container">
+        <div class="row">
+            <!-- COLUNA ESQUERDA -->
+            <div class="col-md-4 mb-4">
+                <h4><strong>FAÇA SUA RESERVA</strong></h4>
+                <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade
+                    e repassando detalhes da reserva.</p>
+            </div>
+            <!-- COLUNA CENTRAL -->
+            <div class="col-md-4 mb-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" class="form-control" placeholder="Insira seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-entrada">Data de entrada:</label>
+                        <input type="date" name="data-entrada" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data-saida">Data de saída:</label>
+                        <input type="date" name="data-saida" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <!-- COLUNA DIREITA -->
+            <div class="col-md-4 mb-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" class="form-control"
+                            placeholder="Insira seu e-mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="adultos">Adultos:</label>
+                        <input type="number" name="adultos" class="form-control"
+                            placeholder="Quantidade de adultos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="criancas">Crianças:</label>
+                        <input type="number" name="criancas" class="form-control"
+                            placeholder="Quantidade de crianças">
+                    </div>
+                    <div class="mb-3">
+                        <label for="observacoes">Observações:</label>
+                        <textarea name="observacoes" class="form-control"
+                            placeholder="Escreva aqui"></textarea>
+                    </div>
+                    <button class="btn-estilo">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

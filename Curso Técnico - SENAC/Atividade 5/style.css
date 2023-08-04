@@ -1,0 +1,23 @@
+/*DEFINIÇÕES PADRÃO DO SITE*/
+body {
+    padding-top: 0;
+    margin: 0;
+}
+
+/*LOGO DO SITE*/
+.logo {
+    text-align: center;
+    padding: 20px;
+    background-color: burlywood;
+}
+
+.logo-imagem {
+    max-width: 100px;
+}
+
+/*PADRÃO DOS BOTÕES*/
+.btn-estilo {
+    background-color: burlywood;
+    color: black;
+    padding: 10px 20px;
+}
