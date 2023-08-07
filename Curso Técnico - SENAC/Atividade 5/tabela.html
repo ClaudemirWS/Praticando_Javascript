@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Reserva</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body onload="lerDados()">
+    <!-- LOGO DO HOTEL -->
+    <div class="logo">
+        <img src="/imagens/icone/logo.png" alt="Logo da Empresa" class="logo-imagem">
+    </div>
+
+    <div class="container mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de Entrada</th>
+                    <th>Data de Saída</th>
+                    <th>Email</th>
+                    <th>Adultos</th>
+                    <th>Crianças</th>
+                    <th>Observações</th>
+                </tr>
+            </thead>
+            <tbody id="reservas">
+                <!-- Os dados serão preenchidos dinamicamente aqui usando JQuery -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

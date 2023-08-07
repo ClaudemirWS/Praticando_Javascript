@@ -7,6 +7,9 @@
     <title>myHotel</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -103,53 +106,53 @@
                 <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade
                     e repassando detalhes da reserva.</p>
             </div>
-            <!-- COLUNA CENTRAL -->
-            <div class="col-md-4 mb-4">
-                <form>
-                    <div class="mb-3">
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" class="form-control" placeholder="Insira seu nome">
+            <!-- COLUNA CENTRAL E DIREITA -->
+            <div class="col-md-8 mb-4">
+                <form id="form" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="nome" class="form-control" placeholder="Insira seu nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="data-entrada">Data de entrada:</label>
+                                <input type="date" name="dataEntrada" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="data-saida">Data de saída:</label>
+                                <input type="date" name="dataSaida" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="email" class="form-control" placeholder="Insira seu e-mail">
+                            </div>
+                            <div class="mb-3">
+                                <label for="adultos">Adultos:</label>
+                                <input type="number" name="adultos" class="form-control"
+                                    placeholder="Quantidade de adultos">
+                            </div>
+                            <div class="mb-3">
+                                <label for="criancas">Crianças:</label>
+                                <input type="number" name="criancas" class="form-control"
+                                    placeholder="Quantidade de crianças">
+                            </div>
+                            <div class="mb-3">
+                                <label for="observacoes">Observações:</label>
+                                <textarea name="observacoes" class="form-control" placeholder="Escreva aqui"></textarea>
+                            </div>
+                            <!-- BOTÃO DE ENVIO -->
+                            <button id="enviarBtn" class="btn-estilo" onclick="escreverDados()"
+                                type="submit">ENVIAR</button>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="data-entrada">Data de entrada:</label>
-                        <input type="date" name="data-entrada" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label for="data-saida">Data de saída:</label>
-                        <input type="date" name="data-saida" class="form-control">
-                    </div>
-                </form>
-            </div>
-            <!-- COLUNA DIREITA -->
-            <div class="col-md-4 mb-4">
-                <form>
-                    <div class="mb-3">
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" class="form-control"
-                            placeholder="Insira seu e-mail">
-                    </div>
-                    <div class="mb-3">
-                        <label for="adultos">Adultos:</label>
-                        <input type="number" name="adultos" class="form-control"
-                            placeholder="Quantidade de adultos">
-                    </div>
-                    <div class="mb-3">
-                        <label for="criancas">Crianças:</label>
-                        <input type="number" name="criancas" class="form-control"
-                            placeholder="Quantidade de crianças">
-                    </div>
-                    <div class="mb-3">
-                        <label for="observacoes">Observações:</label>
-                        <textarea name="observacoes" class="form-control"
-                            placeholder="Escreva aqui"></textarea>
-                    </div>
-                    <button class="btn-estilo">ENVIAR</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
