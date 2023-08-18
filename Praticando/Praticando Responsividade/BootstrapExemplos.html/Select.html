@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grids Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <form method="post" action="#">
+        <div class="mb-3">
+            <label class="form-label" for="selRegião">Selecione a região </label>
+            <select id="selRegiao" class="form-select">
+                <option>Norte </option>
+                <option>Nordeste </option>
+                <option>Centro-Oeste </option>
+                <option>Sudeste </option>
+                <option>Sul </option>
+            </select>
+        </div>
+    </form>
+    <form method="post" action="#">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="chkEmail">
+            <label class="form-check-label" for="chkEmail">
+                Deseja receber nossos emails?
+            </label>
+        </div>
+    </form>
+    <form method="post" action="#">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioSexo" id="rbMasculino">
+            <label class="form-check-label" for="rbMasculino">
+                Masculino
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioSexo" id="rbFeminino" checked>
+            <label class="form-check-label" for="rbFeminino">
+                Feminino
+            </label>
+        </div>
+    </form>
+    <div class="mb-3">
+        <input type="submit" class="btn btn-primary" value="OK">
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

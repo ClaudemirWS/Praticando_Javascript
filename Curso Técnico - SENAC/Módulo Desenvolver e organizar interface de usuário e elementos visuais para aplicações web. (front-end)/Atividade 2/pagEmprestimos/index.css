@@ -1,0 +1,118 @@
+/*DEFINIÇÕES DE ESTILO BÁSICAS DO SITE*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-left: 20px;
+}
+
+.main {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana;
+}
+
+/*ESTILO PARA O CABEÇALHO DO SITE*/
+
+.head {
+    height: 9%;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(9, 5, 44);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head img {
+    margin-top: 1%;
+}
+
+.head button {
+    font-size: 16px;
+    padding: 7px;
+}
+
+/*ESTILO PARA A DESCRIÇÃO DE EMPRÉSTIMOS*/
+
+.emprestimo {
+    display: flex;
+}
+
+.emprestimo p {
+    margin-right: 2%;
+    margin-left: 20px;
+    max-width: 25%;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*ESTILO PARA O SIMULADOR DE EMPRÉSTIMO*/
+
+.simulador {
+    display: flex;
+    justify-content: center;
+}
+
+.simulador label {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.simulador select {
+    font-size: 15px;
+}
+
+.simular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.simular button {
+    font-size: 18px;
+    padding: 8px;
+}
+
+/*ESTILO PARA O BOTÃO DE PERGUNTAS*/
+
+.perguntas .botPergunta {
+    margin-top: 1%;
+    margin-right: 1%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/*EFEITO DE EXPANSÃO FEITO COM AJUDA DO CHAT GPT*/
+
+.perguntas .respostas {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.perguntas .respostas:target {
+    max-height: 1000px;
+    /* Altura máxima para a expansão */
+    transition: max-height 0.5s ease-in;
+}
+
+/*ESTILO PARA O RODAPÉ*/
+
+.foot {
+    margin-top: 5%;
+    font-size: 8px;
+    font-family: Arial;
+    text-align: center;
+}

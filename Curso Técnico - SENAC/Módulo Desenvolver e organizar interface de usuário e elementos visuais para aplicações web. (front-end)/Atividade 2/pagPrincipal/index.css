@@ -1,0 +1,81 @@
+/*DEFINIÇÕES DE ESTILO BÁSICAS DO SITE*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-left: 20px;
+}
+
+.main {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana;
+}
+
+/*ESTILO PARA O CABEÇALHO DO SITE*/
+
+.head {
+    height: 9%;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(9, 5, 44);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head img {
+    margin-top: 1%;
+}
+
+.head button {
+    font-size: 16px;
+    padding: 7px;
+}
+
+/*ESTILO PARA EM DESTAQUE NO SITE*/
+
+.destaque {
+    display: flex;
+}
+
+.destaque p {
+    margin-left: 20px;
+    max-width: 65%;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*ESTILO PARA DEMONSTRATIVO DE SERVIÇOS NO SITE*/
+
+.servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicos p {
+    text-align: justify;
+    font-size: 15px;
+    max-width: 80%;
+}
+
+.servicos button {
+    padding: 7px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+/*ESTILO PARA O RODAPÉ*/
+
+.foot {
+    margin-top: 5%;
+    font-size: 8px;
+    font-family: Arial;
+    text-align: center;
+}

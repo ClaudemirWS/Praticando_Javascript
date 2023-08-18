@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teste Viewport</title>
+    <meta name="viewport" content="witdth=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <p><b>Abra esta página em um navegador modo desktop e depois em modo mobile</b></p>
+    <picture>
+        <source srcset="imagem-320x213.jpg" media="(max-width: 600px)">
+        <source srcset="imagem-480x320.jpg" media="(max-width: 1000px)">
+        <source srcset="imagem-teste.jpg">
+        <img src="imagem-teste.jpg" alt="teste" />
+    </picture>
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat.
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+        commodo consequat.
+    </p>
+</body>
+
+</html>

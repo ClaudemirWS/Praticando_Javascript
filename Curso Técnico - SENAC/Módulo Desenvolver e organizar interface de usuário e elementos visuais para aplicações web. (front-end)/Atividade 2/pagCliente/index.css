@@ -1,0 +1,95 @@
+/*DEFINIÇÕES DE ESTILO BÁSICAS DO SITE*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-left: 20px;
+}
+
+.main {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana;
+}
+
+/*ESTILO PARA O CABEÇALHO DO SITE*/
+
+.head {
+    height: 9%;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(9, 5, 44);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head img {
+    margin-top: 1%;
+}
+
+.head button {
+    font-size: 16px;
+    padding: 7px;
+}
+
+/*ESTILO PARA A MENSAGEM*/
+
+.mensagem {
+    display: flex;
+}
+
+.mensagem p {
+    margin-left: 20px;
+    max-width: 65%;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*ESTILO PARA O FORMULÁRIO */
+
+label,
+input,
+select {
+    margin-bottom: 20px;
+}
+
+form {
+    width: 300px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.formulario input,
+select {
+    width: 300px;
+}
+
+button {
+    padding: 10px;
+}
+
+
+/*ESTILO PARA O RODAPÉ*/
+
+.foot {
+    margin-top: 5%;
+    font-size: 8px;
+    font-family: Arial;
+    text-align: center;
+}
